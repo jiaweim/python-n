@@ -3,6 +3,7 @@
 - [简介](1_intro.md)
 - [Linting](4_linting.md)
 - [Work with Jupyter](2_jupyter.md)
+- [Profiles](./profiles.md)
 
 ## Reference
 

@@ -74,11 +74,23 @@ os.path.isfile(path)
 
 ## os.path.join
 
+> 2024年10月23日⭐
+
 ```py
 os.path.join(path, *paths)
 ```
 
-连接一个或多个路径。将 `path` 和后面的所有 `*paths` 以目录分隔符 `os.sep` 分隔。如果其中有绝对路径，则舍弃该绝对路径前面的所有组分。
+拼接一个或多个路径。
+
+将 `path` 和后面的所有 `*paths` 以目录分隔符 `os.sep` 分隔。如果最后一部分为空或者以分隔符结尾，则路径以分隔符结尾。如果 `*paths` 包含绝对路径，则舍弃绝对路径前面的部分，从绝对路径开始拼接。
+
+在 Windows，遇到根路径（如 `r'\foo'`）不会重置 driver。如果某个路径位于不同 driver 或为绝对路径，则舍弃前面部分，并重置 driver。每个驱动器都有一个当前目录，因此 `os.path.join("c:", "foo")` 表示在 drive `C:` 上相对当前目录的路径 `c:foo`，而不是 `c:\foo`。
+
+```python
+path = 'c:/a/b/c'
+os.path.join(path, 'd')
+Out[4]: 'c:/a/b/c\\d'
+```
 
 ## os.path.exists
 

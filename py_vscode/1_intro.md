@@ -1,4 +1,4 @@
-# 简介
+# 快速入门
 
 - [简介](#简介)
 - [配置](#配置)
@@ -9,9 +9,12 @@
 - [Debug](#debug)
 
 2021-02-20, 11:43
+
 ***
 
-VS Code 支持 Python，各种扩展程序使得 VS Code 成为一个高效而简单的 Python IDE。
+## 简介
+
+Python 扩展使 VS Code 成为一个高效而简单的 Python IDE，可以在任何操作系统与各种 Python 解释器一起使用。
 
 下面按照如下流程介绍如何在 VS Code 中使用 Python：
 - 为 VSCode 安装 Python 扩展

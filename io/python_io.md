@@ -1,31 +1,5 @@
 # Python IO
 
-- [Python IO](#python-io)
-  - [简介](#简介)
-  - [函数总结](#函数总结)
-  - [高层模块接口](#高层模块接口)
-  - [控制台 IO](#控制台-io)
-    - [input](#input)
-    - [print](#print)
-    - [写入文件](#写入文件)
-    - [分隔符及终止符](#分隔符及终止符)
-  - [文件 IO](#文件-io)
-    - [open](#open)
-    - [关闭文件](#关闭文件)
-    - [write](#write)
-    - [read](#read)
-    - [readlines](#readlines)
-    - [seek](#seek)
-    - [tell](#tell)
-  - [类层次结构](#类层次结构)
-  - [实例](#实例)
-    - [逐行读取](#逐行读取)
-    - [二进制读写](#二进制读写)
-    - [读写文本数据](#读写文本数据)
-    - [StringIO](#stringio)
-    - [删除文件](#删除文件)
-  - [参考](#参考)
-
 2021-05-31, 09:23
 ***
 
@@ -214,11 +188,17 @@ Python 操作文件的步骤：
 ### open
 
 ```python
-open(file, mode='r', buffering=-1, encoding=None, 
-           errors=None, newline=None, closefd=True, opener=None)
+open(file, 
+     mode='r', 
+     buffering=-1, 
+     encoding=None, 
+     errors=None, 
+     newline=None, 
+     closefd=True, 
+     opener=None)
 ```
 
-`open` 函数打开文件，返回对应的文件对象。打开失败抛出 `OSError`。
+`open` 函数打开文件并返回相应的文件对象。打开失败抛出 `OSError`。此函数的使用示例可参考[文件读写](../tutorial/io.md)。
 
 1. file
 

@@ -68,9 +68,19 @@ os.mkdir(path, mode=0o777, *, dir_fd=None)
 
 ## os.makedirs
 
+> 2024年10月23日⭐
+
 `os.makedirs(name, mode=0o777, exist_ok=False)`
 
-递归创建目录。功能和 `mkdir()` 类似，但是保证所有中间级目录包含叶目录。
+递归创建目录。功能和 [mkdir()](#osmkdir) 类似，但是创建所有中间级目录。
+
+`mode` 参数传递给 `mkdir` 以创建 leaf 目录，具体参考 [mkdir](#osmkdir)。
+
+要设置新创建父目录的权限，可以在调用 `makedirs()` 之前设置 umask。已有父目录的文件权限不会更改。
+
+如果 `exist_ok` 为 `False` (默认)，当目标目录已存在，抛出 `FileExistsError`。
+
+该函数可以正确处理 UNC 路径。
 
 ## os.walk
 
