@@ -1,6 +1,7 @@
 # 环境管理
 
-2022-01-13
+@since 2022-01-13⭐
+@author Jiawei Mao
 ***
 
 ## 简介
@@ -87,8 +88,6 @@ conda create -n myenv python=3.6 scipy=0.15.0 astroid babel
 ```sh
 conda create --no-default-packages -n myenv python
 ```
-
-## 使用 environment.yml 文件创建环境
 
 ## 激活环境
 

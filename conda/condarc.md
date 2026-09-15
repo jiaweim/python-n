@@ -1,23 +1,5 @@
 # .condarc
 
-- [.condarc](#condarc)
-  - [简介](#简介)
-  - [创建和编辑](#创建和编辑)
-  - [搜索](#搜索)
-  - [通用配置](#通用配置)
-    - [channels](#channels)
-    - [always\_yes](#always_yes)
-    - [show\_channel\_urls](#show_channel_urls)
-  - [高级配置](#高级配置)
-    - [channel\_alias](#channel_alias)
-  - [conda-build 配置](#conda-build-配置)
-  - [环境变量扩展](#环境变量扩展)
-  - [查询配置信息](#查询配置信息)
-  - [配置线程数](#配置线程数)
-  - [conda 配置选项](#conda-配置选项)
-    - [自动激活](#自动激活)
-  - [参考](#参考)
-
 2022-06-07, 16:30
 ***
 
